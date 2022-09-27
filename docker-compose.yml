@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  database_test:
+    image: postgres:11-alpine
+    container_name: rentx_prisma_test
+    ports:
+      - 5432:5432
+    env_file:
+      - './.env.test'
+    volumes:
+      - pgdata:/data/postgres
+    network_mode: host
+
+volumes:
+  pgdata:
+    driver: local
