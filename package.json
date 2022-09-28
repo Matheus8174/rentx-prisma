@@ -18,7 +18,7 @@
   },
   "keywords": [],
   "author": "Matheus Santos Araujo da Silva <souzamatheus8174@gmail.com>",
-  "license": "MiT",
+  "license": "MIT",
   "devDependencies": {
     "@faker-js/faker": "^7.5.0",
     "@types/bcrypt": "^5.0.0",
