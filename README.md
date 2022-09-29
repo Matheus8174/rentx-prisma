@@ -23,7 +23,7 @@
 - [ ] devolutionRental
 - [ ] listRentalsByUser
 
-## Futhure features
+# Futhure features
 
 - [ ] testar o corpo da requicição - joi
 - [ ] ssl/tls automatizado com nginx
