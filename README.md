@@ -19,12 +19,11 @@
 - [ ] uploadCarImage
 
 ## rentals Entity
-- [ ] createRental
-- [ ] devolutionRental
+- [x] createRental
+- [x] devolutionRental
 - [ ] listRentalsByUser
 
-# Futhure features
-
+# RNF
 - [ ] testar o corpo da requicição - joi
 - [ ] ssl/tls automatizado com nginx
 - [ ] ci/cd

@@ -1,5 +1,4 @@
 import { Car, PrismaClient } from '@prisma/client';
-// import prismaClient from '@shared/infra/prisma/client';
 
 import ICarsRepository from '@modules/cars/repositories/ICarsRepository';
 import ICreateCarDTO from '@modules/cars/dtos/ICreateCarDTO';
@@ -24,6 +23,21 @@ class CarsRepository implements ICarsRepository {
     });
 
     return car;
+  }
+
+  async findById(carId: string): Promise<Car | null> {
+    const car = await this.prismaClient.car.findUnique({
+      where: { id: carId }
+    });
+
+    return car;
+  }
+
+  async updateAvailable(carId: string, available: boolean): Promise<void> {
+    await this.prismaClient.car.update({
+      data: { available },
+      where: { id: carId }
+    });
   }
 }
 
